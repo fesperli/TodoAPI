@@ -129,6 +129,18 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "GetSelected",
+			"id": "50323078-7a527046-ae52-4309-9ae4-d334572edd4d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
 		}
 	]
 }
