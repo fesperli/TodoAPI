@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "50323078-31c53205-2636-4043-8fed-4db49e1c68a3",
+		"name": "AulaAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AddTodo",
+			"id": "50323078-38eb29ad-d99d-4a0c-bc47-debb53fed98e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"title\" : \"Ir para a academia\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7180/api/Todo/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7180",
+					"path": [
+						"api",
+						"Todo",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAll",
+			"id": "50323078-f819fa34-cddb-4d9f-8869-9228e7c48848",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7180/api/Todo",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7180",
+					"path": [
+						"api",
+						"Todo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteTodo",
+			"id": "50323078-71a4438e-c57a-4e2b-a7a8-7621d97f15c7",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"title\" : \"Ir para a academia\"\r\n}"
+				},
+				"url": {
+					"raw": "https://localhost:7180/api/Todo/cbd57be6-80f9-441c-aa7e-71b7d4cf7151",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7180",
+					"path": [
+						"api",
+						"Todo",
+						"cbd57be6-80f9-441c-aa7e-71b7d4cf7151"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateTodo",
+			"id": "50323078-b67ec724-41e7-4e05-8427-043a784e2b51",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"title\" : \"Ir para a academia\"\r\n}"
+				},
+				"url": {
+					"raw": "https://localhost:7180/api/Todo/636d187a-5eea-4856-b48f-25281ead9b24",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7180",
+					"path": [
+						"api",
+						"Todo",
+						"636d187a-5eea-4856-b48f-25281ead9b24"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetSelected",
+			"id": "50323078-7a527046-ae52-4309-9ae4-d334572edd4d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
