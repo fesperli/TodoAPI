@@ -1,0 +1,124 @@
+{
+  "info": {
+    "_postman_id": "aba29e96-6326-47dd-99d9-a3180148f90b",
+    "name": "APITodo",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "GetTodo",
+      "id": "0f47efab-655a-4468-92ee-98633ddff0f1",
+      "request": {
+        "method": "GET",
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "text"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:7180/api/Todo",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7180",
+          "path": [
+            "api",
+            "Todo"
+          ]
+        }
+      }
+    },
+    {
+      "name": "DeleteTodo",
+      "id": "a82c8c1d-ad2c-44b8-b4f3-c5e940865432",
+      "request": {
+        "method": "DELETE",
+        "url": {
+          "raw": "https://localhost:7180/api/Todo",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7180",
+          "path": [
+            "api",
+            "Todo"
+          ]
+        }
+      }
+    },
+    {
+      "name": "UpdateTodo",
+      "id": "c8766194-1d92-4c20-b22c-7b36f3294d97",
+      "request": {
+        "method": "PUT",
+        "url": {
+          "raw": "https://localhost:7180/api/Todo/79935020-fb06-4fe3-8a9f-d28b085fcc7d",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7180",
+          "path": [
+            "api",
+            "Todo",
+            "79935020-fb06-4fe3-8a9f-d28b085fcc7d"
+          ]
+        }
+      }
+    },
+    {
+      "name": "SelectTodo",
+      "id": "2743504f-361d-4286-ae51-987586007b88",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "https://localhost:7180/api/Todo/79935020-fb06-4fe3-8a9f-d28b085fcc7d",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7180",
+          "path": [
+            "api",
+            "Todo",
+            "79935020-fb06-4fe3-8a9f-d28b085fcc7d"
+          ]
+        }
+      }
+    },
+    {
+      "name": "AddTodo",
+      "id": "8e7e40d8-d5ae-4477-9e1b-829305541428",
+      "request": {
+        "method": "POST",
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\": \"Achar o omnitrix\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:7180/api/Todo",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7180",
+          "path": [
+            "api",
+            "Todo"
+          ]
+        }
+      }
+    }
+  ]
+}

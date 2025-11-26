@@ -21,7 +21,7 @@ namespace Todo.API.Controllers
         {
             var todo = _context.Todos.FirstOrDefault(t => t.Id == id);
             if (todo is null)
-            { 
+            {
                 return null;
             }
             return todo;
@@ -44,8 +44,8 @@ namespace Todo.API.Controllers
             {
                 return NotFound();
             }
-                _context.Todos.Remove(todo);
-                _context.SaveChanges();
+            _context.Todos.Remove(todo);
+            _context.SaveChanges();
 
             return Ok();
         }
@@ -62,5 +62,6 @@ namespace Todo.API.Controllers
 
             _context.SaveChanges();
             return todo;
+        }
     }
 }
